@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 function useDropdown(label, defaultState, options) {
-  var [state, updateState] = useState(defaultState);
-  var id = `use-dropdown-${label.replace(' ', '').toLowerCase()}`;
+  var [state, updateState] = useState(defaultState),
+      id = `use-dropdown-${label.replace(' ', '').toLowerCase()}`;
 
   function Dropdown() {
     return (
@@ -26,7 +26,7 @@ function useDropdown(label, defaultState, options) {
     )
   }
 
-  return [state, Dropdown];
+  return [state, Dropdown, updateState];
 }
 
 export default useDropdown;
