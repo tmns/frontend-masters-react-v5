@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
+    "@reach/router": "^1.2.1",
+    "D": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
